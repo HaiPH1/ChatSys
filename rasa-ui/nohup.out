@@ -1,0 +1,70 @@
+
+> RasaUI@3.0.1 start /home/quangpham/Workspace/ChatSys/rasa-ui
+> node server/server.js
+
+internal/modules/cjs/loader.js:979
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:976:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:859:27)
+    at Module.require (internal/modules/cjs/loader.js:1036:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js:10:17)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js' ]
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! RasaUI@3.0.1 start: `node server/server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the RasaUI@3.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/quangpham/.npm/_logs/2020-03-27T12_44_33_281Z-debug.log
+
+> RasaUI@3.0.1 start /home/quangpham/Workspace/ChatSys/rasa-ui
+> node server/server.js
+
+internal/modules/cjs/loader.js:979
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:976:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:859:27)
+    at Module.require (internal/modules/cjs/loader.js:1036:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js:10:17)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/quangpham/Workspace/ChatSys/rasa-ui/server/server.js' ]
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! RasaUI@3.0.1 start: `node server/server.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the RasaUI@3.0.1 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/quangpham/.npm/_logs/2020-03-27T12_48_55_712Z-debug.log
