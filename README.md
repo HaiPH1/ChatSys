@@ -123,3 +123,42 @@ Trong đó phần **socketUrl** bạn đổi host thành host máy chủ Rasa c�
     ./stop.sh # stop các service
     ./restart.sh # restart các service
     ```
+
+#### Hướng dẫn sử dụng Docker
+
+Để sử dụng Docker để deploy dự án này, bạn không cần cài bất cứ thứ gì ngoài Docker và Docker compose, hãy đảm bảo chúng có sẵn trên máy.
+
+Đầu tiên, đảm bảo bạn terminal của bạn đang làm việc trong thư mục gốc **ChatSys**, sau đó thực hiện lệnh:
+
+```sh
+sudo docker-compose up
+```
+
+Sau khi lệnh này được chạy xong, hãy lập tức vào địa chỉ http://localhost:5001/ để kiểm tra server Rasa UI đã hoạt động hay chứa, sau đó tiếp tục vào http://localhost:5005/ kiểm tra version hiện sử dụng của Rasa. Khi cả 2 điều này đã thực hiện được, bạn đã thực sự build được toàn bộ chương trình. Chatbot sẽ được kết nối ra ngoài qua http://localhost:5005/ chính là host server của Rasa server.
+
+Để test chatbot có kết nối được hay không, hay quay trở lại với project demo trivago. Trivago đã được kết nối sẵn với chatbot nếu server chatbot đang hoạt động.
+
+```python
+source chatsys_env/bin/activate
+cd trivago
+python server.py
+```
+
+Để thực hiện test chatbot trên bất kì trang web nào chạy ở local của bạn, hãy thêm đoạn JS sau vào [body]...[/body] của khung html.
+
+```js
+<div id="webchat"/>
+    <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+    <script>
+      WebChat.default.init({
+        selector: "#webchat",
+        customData: {"language": "en"},
+        socketUrl: "http://35.235.107.213:5005",
+        socketPath: "/socket.io/",
+        title: "Chatbot",
+        subtitle: "",
+      })
+    </script>
+```
+
+Thay localhost bằng địa chỉ External IP máy của bạn nếu muốn test với các chatbot ngoài mạng.
